@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#16FFFFFF">
+
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="110dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:text="Name"
+        android:textColor="#558B2F"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/contactImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvContactReview"
+        android:layout_width="171dp"
+        android:layout_height="84dp"
+        android:text="Review"
+        android:textColor="@android:color/tab_indicator_text"
+        app:layout_constraintStart_toEndOf="@+id/contactImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvContactLocation" />
+
+    <TextView
+        android:id="@+id/tvContactLocation"
+        android:layout_width="171dp"
+        android:layout_height="38dp"
+        android:text="location"
+        android:textColor="#0277BD"
+        app:layout_constraintStart_toEndOf="@+id/contactImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvContactName" />
+
+    <ImageView
+        android:id="@+id/contactImage"
+        android:layout_width="185dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="4dp"
+        android:foregroundGravity="center"
+        android:rotation="90"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/defaultimage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

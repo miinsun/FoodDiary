@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchContactBtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/logo"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="20180986 윤민선"
+        android:textColor="#332828" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="392dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <Button
+        android:id="@+id/btnOpenAllContact"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#70DA2FD0"
+        android:onClick="onClick"
+        android:shadowColor="#FFFFFF"
+        android:text="전체 맛집 리뷰 보기"
+        app:backgroundTint="?android:attr/textColorTertiary"
+        app:backgroundTintMode="multiply"
+        app:strokeColor="#8F4E4E" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSearchrestaurant"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#70D573D0"
+            android:onClick="onClick"
+            app:backgroundTint="?android:attr/textColorTertiary"
+            app:backgroundTintMode="multiply"
+            android:text="맛집 지도" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAllReviewMap"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#70D173D5"
+            android:onClick="onClick"
+            android:text="나만의 맛집 지도"
+            app:backgroundTint="?android:attr/textColorTertiary"
+            app:backgroundTintMode="multiply" />
+
+    </LinearLayout>
+
+</LinearLayout>
